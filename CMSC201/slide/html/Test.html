@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Intro to Java Programming, Y. Daniel Liang - Test.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="codecolor.css" />
+</head>
+<body>
+<form action = "https://liveexample.pearsoncmg.com/codeanimation/Test.html" method = "get" target="_blank" style="display: inline">
+<input type = "submit" style = "background-color: green; color: white; border:0px;" value = "Animation" />
+</form>
+<form action = "https://liveexample-ppe.pearsoncmg.com/LiveRun/faces/LiveExample.xhtml" method = "get" target="_blank" style="display: inline">
+<input type = "hidden" name = "programName" value = "Test" />
+<input type = "hidden" name = "username" value = "slide" />
+<input type = "hidden" name = "header" value = "on" />
+<input type = "submit" style = "background-color: goldenrod; color: white; border:0px;" value = "Compile/Run Example Live" />
+</form>
+<pre>
+<span class = "keyword">public</span> <span class = "keyword">class</span> Test {
+  <span class = "comment">/** Main method */</span>
+  <span class = "keyword">public</span> <span class = "keyword">static</span> <span class = "keyword">void</span> main(String[] args) {
+  	<span class = "keyword">int</span> x = <span class = "constant">5</span>;
+    <span class = "keyword">for</span> (<span class = "keyword">int</span> i = <span class = "constant">0</span>; i &lt; x; i++) {
+      <span class = "keyword">if</span> (i % <span class = "constant">2</span> == <span class = "constant">0</span>) {
+        <span class = "keyword">continue</span>;
+      }
+      
+      System.out.print(i + <span class = "literal">" "</span>);
+    }
+  }
+
+  <span class = "comment">/** Print a table of areas for radius */</span>
+  <span class = "keyword">public</span> <span class = "keyword">static</span> <span class = "keyword">void</span> printAreas(Circle c, <span class = "keyword">int</span> times) {
+    System.out.println(<span class = "literal">"Radius \t\tArea"</span>);
+    <span class = "keyword">while</span> (times &gt;= <span class = "constant">1</span>) {
+      System.out.println(c.getRadius() + <span class = "literal">"\t\t"</span> + c.getArea());
+     c.setRadius(c.getRadius() + <span class = "constant">1</span>);
+      
+    }
+  }
+}
+</pre>
+</body>
+</html>

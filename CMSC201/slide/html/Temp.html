@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Intro to Java Programming, Y. Daniel Liang - Temp.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="codecolor.css" />
+</head>
+<body>
+<form action = "TempWithLineNumber.html" method = "get" style="display: inline">
+<input type = "submit" style = "background-color: green; color: white; border:0px;" value = "Show Code With Line Numbers" />
+</form>
+<form action = "https://liveexample-ppe.pearsoncmg.com/LiveRun/faces/LiveExample.xhtml" method = "get" target="_blank" style="display: inline">
+<input type = "hidden" name = "programName" value = "Temp" />
+<input type = "hidden" name = "username" value = "slide" />
+<input type = "hidden" name = "header" value = "on" />
+<input type = "submit" style = "background-color: goldenrod; color: white; border:0px;" value = "Compile/Run Example Live" />
+</form>
+<pre>
+<span class = "keyword">import</span> java.util.*;
+
+<span class = "keyword">public</span> <span class = "keyword">class</span> Temp {
+  <span class = "keyword">public</span> <span class = "keyword">static</span> <span class = "keyword">void</span> main(String[] args) {
+<span class = "comment">//  	MyArrayList&lt;String&gt; list = new MyArrayList&lt;&gt;();</span>
+  	BST&lt;String&gt; list = <span class = "keyword">new</span> BST&lt;&gt;();
+  	list.add(<span class = "literal">"ABC"</span>);
+  	list.add(<span class = "literal">"BC"</span>);
+  	list.add(<span class = "literal">"CC"</span>);
+  	list.add(<span class = "literal">"DC"</span>);
+  	list.add(<span class = "literal">"EC"</span>);
+
+  	<span class = "keyword">for</span> (String s: list)
+    	System.out.print(s + <span class = "literal">" "</span>);
+
+  	System.out.println();
+  	
+  	Iterator&lt;String&gt; iterator = list.iterator();
+  	System.out.println(iterator.next());  	
+  	iterator.remove();
+  	
+  	System.out.println(iterator.next());
+  	iterator.remove();
+  	
+  	System.out.println(iterator.next());
+  	iterator.remove();
+  	
+  	<span class = "keyword">for</span> (String s: list)
+    	System.out.print(s + <span class = "literal">" "</span>);
+  }
+}
+</pre>
+</body>
+</html>
